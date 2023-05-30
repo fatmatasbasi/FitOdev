@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient
+        android:startColor="#ECECEC"
+        android:endColor="#4F34D34F"
+        android:angle="45" /> <!-- Arkaplan için bir gradient renk geçişi -->
+
+    <corners
+        android:radius="8dp" /> <!-- Köşelerin yuvarlaklığı -->
+
+    <padding
+        android:left="16dp"
+        android:top="16dp"
+        android:right="16dp"
+        android:bottom="16dp" /> <!-- İçerik ile kenarlıklar arasındaki boşluk -->
+
+    <stroke
+        android:color="#0009FF12"
+        android:width="2dp" /> <!-- Kenarlık rengi ve kalınlığı -->
+</shape>

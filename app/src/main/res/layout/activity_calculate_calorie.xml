@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".CalculateCalorie"
+    android:background="@drawable/wall2">
+
+    <TextView
+        android:id="@+id/textViewAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yaş:"
+        android:textStyle="italic"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/editTextAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewAge"
+        android:inputType="number"
+        tools:ignore="TouchTargetSizeCheck"
+        android:textStyle="italic"
+        android:hint="Yaşınızı girin"
+        android:textColorHint="#7C000000"
+        android:textColor="@color/black"/>
+
+
+    <TextView
+        android:id="@+id/textViewWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kilo (kg):"
+        android:layout_below="@id/editTextAge"
+        android:layout_marginTop="16dp"
+        android:textStyle="italic"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/editTextWeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewWeight"
+        android:hint="Kilonuzu girin"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:textStyle="italic"
+        android:textColor="@color/black"
+        android:textColorHint="#7C000000"/>
+
+    <TextView
+        android:id="@+id/textViewHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Boy (cm):"
+        android:layout_below="@id/editTextWeight"
+        android:layout_marginTop="16dp"
+        android:textStyle="italic"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/editTextHeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewHeight"
+        android:hint="Boyunuzu girin"
+        android:inputType="numberDecimal"
+        tools:ignore="TouchTargetSizeCheck"
+        android:textStyle="italic"
+        android:textColor="@color/black"
+        android:textColorHint="#7C000000"/>
+
+    <TextView
+        android:id="@+id/textViewGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cinsiyet:"
+        android:layout_below="@id/editTextHeight"
+        android:layout_marginTop="16dp"
+        android:textStyle="italic"
+        android:textColor="@color/black"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroupGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewGender"
+        android:textStyle="italic">
+
+        <RadioButton
+            android:id="@+id/radioButtonMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Erkek"
+            android:textColor="@color/black"/>
+
+        <RadioButton
+            android:id="@+id/radioButtonFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kadın"
+            android:textStyle="italic"
+            android:textColor="@color/black"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textViewActivityLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hareket Seviyeniz:"
+        android:layout_below="@id/radioGroupGender"
+        android:layout_marginTop="16dp"
+        android:textStyle="italic"
+        android:textColor="@color/black"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroupActivityLevel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewActivityLevel"
+        android:textStyle="italic">
+
+        <RadioButton
+            android:id="@+id/radioButtonSedentary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hareketsiz"
+            android:textStyle="italic"
+            android:textColor="@color/black"/>
+
+        <RadioButton
+            android:id="@+id/radioButtonLightlyActive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Az hareketli"
+            android:textColor="@color/black"/>
+
+        <RadioButton
+            android:id="@+id/radioButtonModeratelyActive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Orta hareketli"
+            android:textStyle="italic"
+            android:textColor="@color/black"/>
+
+        <RadioButton
+            android:id="@+id/radioButtonVeryActive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Çok hareketli"
+            android:textStyle="italic"
+            android:textColor="@color/black"/>
+
+        <RadioButton
+            android:id="@+id/radioButtonExtremelyActive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Son derece hareketli"
+            android:textStyle="italic"
+            android:textColor="@color/black"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radioGroupActivityLevel"
+        android:layout_marginTop="16dp"
+        android:text="Hesapla"
+        android:layout_centerHorizontal="true"
+        android:textStyle="italic"/>
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonCalculate"
+        android:layout_marginTop="16dp"
+        android:textStyle="italic"/>
+
+</RelativeLayout>

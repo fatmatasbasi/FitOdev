@@ -1,0 +1,151 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".Profile"
+    android:background="@drawable/wallpaperfitness">
+
+    <TextView
+        android:id="@+id/tvTotalCalories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="9dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/tasarim"
+        android:gravity="center"
+        android:text="Alınan Kalori: 0"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTotalCalories"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="99dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/meal_background"
+            android:text="Kahvaltı"
+            android:textColor="#063C08"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+
+        <LinearLayout
+            android:id="@+id/llBreakfast"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#063C08"
+            android:orientation="vertical">
+
+            <!-- Kahvaltı yemeklerini dinamik olarak ekleyeceğimiz bir layout -->
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnAddBreakfast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:onClick="addBreakfastItem"
+            android:text="+" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/meal_background"
+            android:text="Öğle Yemeği"
+            android:textColor="#063C08"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+
+        <LinearLayout
+            android:id="@+id/llLunch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:textColor="#063C08"
+            android:orientation="vertical">
+
+            <!-- Öğle yemeği yemeklerini dinamik olarak ekleyeceğimiz bir layout -->
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnAddLunch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:onClick="addLunchItem"
+            android:text="+" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/meal_background"
+            android:text="Akşam Yemeği"
+            android:textColor="#063C08"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+
+        <LinearLayout
+            android:id="@+id/llDinner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#063C08"
+            android:orientation="vertical">
+
+            <!-- Akşam yemeği yemeklerini dinamik olarak ekleyeceğimiz bir layout -->
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnAddDinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:onClick="addDinnerItem"
+            android:text="+" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+    />
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="255dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginBottom="627dp"
+        android:background="@drawable/tasarim"
+        android:text="Günlük kalori ihtiyacın:"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="#063C08"
+        android:textStyle="italic" />
+
+
+</RelativeLayout>
+
